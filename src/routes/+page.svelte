@@ -10,21 +10,27 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+	title="Find better jobs, faster"
+	subtitle="Cut the noise. Only roles worth your time."
+	imageSrc="/generated/image-a-professional-designer-dressed-in-smart.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by leading design companies"
+	logoUrls={[
+		'https://logo.clearbit.com/figma.com',
+		'https://logo.clearbit.com/adobe.com',
+		'https://logo.clearbit.com/spotify.com',
+		'https://logo.clearbit.com/airbnb.com'
+	]}
+/>
 
 <Summary
-	generating
 	title="What we do"
 	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
 			name: "Jane Smith",
@@ -57,7 +63,6 @@
 />
 
 <Features
-	generating
 	title="Features"
 	subtitle="Some features"
 	features={[
@@ -78,5 +83,5 @@
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction />

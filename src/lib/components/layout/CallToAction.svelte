@@ -50,10 +50,10 @@
 
 	// Props
 	const {
-		title = "Get started today",
-		subtitle = "Join now",
-		description = "Ready to experience the difference? Join our community of satisfied customers and see how our solution can transform your workflow. ",
-		imageSrc = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+		title = "Thank you for being part of our journey",
+		subtitle = "Stay connected with the community",
+		description = "Though Grids has sunset, the community we built lives on. Connect with fellow designers who shared this vision for better job matching and continue supporting each other in finding meaningful work.",
+		imageSrc = "/generated/image-a-cheerful-designer-sitting-at-a-sleek-c.webp",
 		callsToAction = [cta],
 		...rest
 	}: {

@@ -17,33 +17,50 @@
 <Testimonials
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Mika Luo",
+			position: "Product Designer",
+			company: "Pocketframer",
 			quote:
-				"This solution transformed our workflow and increased productivity by 35% in just two months.",
+				"Grids saved me weeks of job hunting. Every role felt relevant, and I ended up landing an interview within days. The ROI on my subscription was incredible.",
 			image:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-professional-headshot-of-an-asian-woma.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Tanae H.",
+			position: "UX Lead",
+			company: "Hexform Studio",
 			quote:
-				"The implementation was seamless and the support team was exceptional throughout the process.",
+				"The auto-generated profile hit all the right notes. Felt like it was made by a recruiter who knew exactly what companies wanted. Worth every penny.",
 			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-professional-headshot-of-a-black-woman.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Cam Díaz",
+			position: "Senior UI Designer",
+			company: "Everwave",
 			quote:
-				"We've tried multiple solutions, but this is the only one that perfectly addressed all our requirements.",
+				"Honestly refreshing. Every design role I saw was something I would actually apply for. The time savings alone justified the cost.",
 			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&estimonial-3.jpg"
+				"/generated/image-a-professional-headshot-of-a-latino-man-.webp"
 		}
 	]}
 />
 
-<CallToAction />
+<CallToAction
+	title="Land your next design job, minus the chaos"
+	subtitle="Your next design role is waiting"
+	description="Thousands of jobs sorted. Signals over noise. Profiles built to win. Join a community of designers making smarter career moves—fast."
+	imageSrc="/generated/image-a-cheerful-designer-sitting-at-a-desk-su.webp"
+	callsToAction={[
+		{
+			href: "https://grids.at/community",
+			label: "Join Discord community",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Learn more",
+			variant: "secondary"
+		}
+	]}
+/>

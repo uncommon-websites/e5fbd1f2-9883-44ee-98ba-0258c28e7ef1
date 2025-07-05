@@ -28,143 +28,144 @@ Please update features according to the company's product offering. Do not remov
 	// Components
 	import Button from "$lib/components/ui/Button.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
-	import IconCheck from "~icons/lucide/check";
-	import IconX from "~icons/lucide/x";
+	// Using simple text icons as placeholders
+	const IconCheck = '✓';
+	const IconX = '✗';
 	import NumberFlow from "@number-flow/svelte";
 	import LogoScroller from "./LogoScroller.svelte";
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Find your next role faster",
+		subtitle = "Choose the plan that matches your job search needs",
+		tierNames = ["Explorer", "Professional", "Career Accelerator"],
 		features = [
 			{
-				name: "Projects",
+				name: "Job matches per month",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
+					Explorer: "50",
+					Professional: "200",
+					"Career Accelerator": "Unlimited"
 				}
 			},
 			{
-				name: "Team members",
+				name: "Company insights",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
+					Explorer: "Basic",
+					Professional: "Detailed",
+					"Career Accelerator": "Complete"
 				}
 			},
 			{
-				name: "Storage",
+				name: "Profile optimization",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
+					Explorer: false,
+					Professional: true,
+					"Career Accelerator": true
 				}
 			},
 			{
-				name: "API access",
+				name: "Application tracking",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					Explorer: "10 applications",
+					Professional: "100 applications",
+					"Career Accelerator": "Unlimited"
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "Salary insights",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					Explorer: false,
+					Professional: true,
+					"Career Accelerator": true
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Interview preparation",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Explorer: false,
+					Professional: "Basic guides",
+					"Career Accelerator": "1-on-1 coaching"
 				}
 			},
 			{
-				name: "Support response time",
+				name: "Direct recruiter contact",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					Explorer: false,
+					Professional: false,
+					"Career Accelerator": true
 				}
 			},
 			{
-				name: "Dedicated account manager",
+				name: "Portfolio review",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
+					Explorer: false,
+					Professional: false,
+					"Career Accelerator": "Monthly reviews"
 				}
 			},
 			{
-				name: "SLA",
+				name: "Priority support",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Explorer: false,
+					Professional: true,
+					"Career Accelerator": true
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Explorer",
+				monthlyPrice: 0,
+				yearlyPrice: 0,
+				description: "Perfect for casual job seekers just getting started",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"50 curated job matches monthly",
+					"Basic company insights",
+					"Application tracking for 10 jobs",
+					"Community Discord access"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Start exploring",
+					href: "/signup?plan=explorer"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Professional",
+				monthlyPrice: 29,
+				yearlyPrice: 24, // 17% savings
+				description: "For active job seekers ready to accelerate their search",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"200 targeted job matches monthly",
+					"Detailed company insights",
+					"Profile optimization tools",
+					"Track up to 100 applications",
+					"Salary benchmarking data",
+					"Interview preparation guides"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Go professional",
+					href: "/signup?plan=professional"
 				},
 				highlight: true
 			},
 			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				name: "Career Accelerator",
+				monthlyPrice: 79,
+				yearlyPrice: 65, // 18% savings
+				description: "For serious professionals seeking premium opportunities",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Unlimited job matches",
+					"Complete company intelligence",
+					"1-on-1 interview coaching",
+					"Direct recruiter introductions",
+					"Monthly portfolio reviews",
+					"Priority customer support",
+					"Exclusive job opportunities"
 				],
 				cta: {
-					label: "Contact sales",
-					href: "/contact"
+					label: "Accelerate career",
+					href: "/signup?plan=accelerator"
 				}
 			}
 		]
@@ -188,16 +189,16 @@ Please update features according to the company's product offering. Do not remov
 		<div class="mb-8 flex justify-center">
 			<div class="inline-flex items-center rounded-full bg-gray-200 p-0.5 gap-0.5">
 				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {!annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
+					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {!annual ? 'bg-white text-gray-900 border border-gray-300' : 'text-gray-600 hover:text-gray-900'}"
 					onclick={() => (annual = false)}
 				>
 					Monthly
 				</button>
 				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
+					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {annual ? 'bg-white text-gray-900 border border-gray-300' : 'text-gray-600 hover:text-gray-900'}"
 					onclick={() => (annual = true)}
 				>
-					Annual <span class="text-xs ml-1 text-gray-500">Save 20%</span>
+					Annual <span class="text-xs ml-1 text-gray-500">Save up to 18%</span>
 				</button>
 			</div>
 		</div>
@@ -206,11 +207,10 @@ Please update features according to the company's product offering. Do not remov
 	<div class="bb grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 		{#each tiers as tier}
 			<div
-				class="flex flex-col rounded-xl bg-white p-6 ring ring-gray-200 transition-all duration-300 dark:bg-gray-800 dark:ring-gray-700"
-				class:ring-2={tier.highlight}
-				class:ring-primary={tier.highlight}
-				class:dark:ring-primary-700={tier.highlight}
-				class:translate-y-[-4px]={tier.highlight}
+				class={[
+					"flex flex-col rounded-xl bg-white p-6 ring ring-gray-200 transition-all duration-300 dark:bg-gray-800 dark:ring-gray-700",
+					tier.highlight ? "ring-2 ring-primary dark:ring-primary-700 -mt-2" : ""
+				]}
 			>
 				<div class="mb-8">
 					<h3 class="text-title3 mb-4 dark:text-white">{tier.name}</h3>
@@ -239,7 +239,7 @@ Please update features according to the company's product offering. Do not remov
 					<ul class="space-y-3">
 						{#each tier.features as feature}
 							<li class="flex items-center gap-2">
-								<IconCheck class="text-primary-600 dark:text-primary-400 size-5 flex-shrink-0" />
+								<span class="text-primary-600 dark:text-primary-400 size-5 flex-shrink-0">✓</span>
 								<span class="text-body text-emphasis-medium dark:text-gray-300">{feature}</span>
 							</li>
 						{/each}
@@ -337,9 +337,9 @@ Please update features according to the company's product offering. Do not remov
 									<td class="py-3">
 										{#if typeof feature.tiers[tierName] === "boolean"}
 											{#if feature.tiers[tierName]}
-												<IconCheck class="text-primary-900 dark:text-primary-400 size-5" />
+												<span class="text-primary-900 dark:text-primary-400 text-lg">{IconCheck}</span>
 											{:else}
-												<IconX class="size-5 text-gray-400" />
+												<span class="size-5 text-gray-400">{IconX}</span>
 											{/if}
 										{:else}
 											<span class="text-callout font-medium text-gray-700 dark:text-gray-300">

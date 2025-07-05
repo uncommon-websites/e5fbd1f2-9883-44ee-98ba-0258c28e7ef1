@@ -7,6 +7,7 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import UseCases from "$lib/components/layout/UseCases.svelte";
 </script>
 
 <Hero
@@ -27,59 +28,93 @@
 
 <Summary
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Grids streamlines your job search by filtering thousands of listings to show only opportunities worth considering. We provide clear insights into companies and roles without the fluff, plus help you create profiles that get you hired."
 />
 
 <Testimonials
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Celeste Ramirez",
+			position: "Senior Product Designer",
+			company: "Moonshot Labs",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
+				"Grids saved me 10 hours per week by filtering out irrelevant roles.\nInstead of scrolling through hundreds of listings, I only saw positions that actually matched my skills and salary expectations.",
 			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-woman-designer-deeply-foc.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Kieran Walsh",
+			position: "UX Lead",
+			company: "Velocity Design",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
+				"I avoided three terrible job situations because Grids showed me the real company culture and team dynamics upfront.\nNo more surprise toxic environments or misleading job descriptions after I started.",
 			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-man-designer-immersed-in-.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Zara Okafor",
+			position: "Creative Director",
+			company: "Brand Studio Co",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
+				"Grids helped me negotiate a $15,000 higher salary by showing me exactly what similar roles were paying.\nI walked into interviews knowing my worth and got offers 30% above my previous salary.",
 			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-woman-designer-participat.webp"
+		}
+	]}
+/>
+
+<UseCases
+	title="Use Cases"
+	subtitle="Real-world applications for your job search needs"
+	useCases={[
+		{
+			title: "Smart job matching",
+			description: "Cut through thousands of irrelevant listings to find opportunities perfectly matched to your skills, experience, and career goals. No more wasting hours on jobs that don't fit.",
+			image: "/generated/image-a-person-sitting-at-a-desk-in-a-well-lit.webp",
+			link: {
+				href: "/use-cases/smart-job-matching",
+				label: "Learn more"
+			}
+		},
+		{
+			title: "Company insights",
+			description: "Get clear insights into company culture, team dynamics, and role expectations before you apply. Avoid toxic environments and know what you're walking into.",
+			image: "/generated/image-a-professional-in-a-modern-office-space-.webp",
+			link: {
+				href: "/use-cases/company-insights",
+				label: "Learn more"
+			}
+		},
+		{
+			title: "Profile optimization",
+			description: "Create profiles that stand out and check every box employers are looking for. Our tools help you present your skills in the most compelling way possible.",
+			image: "/generated/image-a-creative-designer-in-a-bright-studio-s.webp",
+			link: {
+				href: "/use-cases/profile-optimization",
+				label: "Learn more"
+			}
 		}
 	]}
 />
 
 <Features
-	title="Features"
-	subtitle="Some features"
+	title="Design jobs, without the noise"
+	subtitle="Grids sifted through thousands of listings so you didn't have to"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Curated job matching",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"We filtered thousands of jobs to show only the roles worth considering. Highly relevant opportunities that matched your skills and career goals."
 		},
 		{
-			title: "Data Analysis",
+			title: "Vacancies without the fluff",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"No more wordy job descriptions or vague responsibilities. Just clear insights about the role, team, and company to help you decide fast."
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Optimized profiles that got you hired",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"From portfolio snapshots to employer signals, our profile tools helped you stand out and check every box your next employer was looking for."
 		}
 	]}
 />

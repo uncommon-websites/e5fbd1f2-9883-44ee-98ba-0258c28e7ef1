@@ -9,11 +9,11 @@
 	import Card from "$lib/components/ui/Card.svelte";
 	import JobList, { type JobOpening } from "./JobList.svelte";
 
-	// Icons
-	import IconBriefcase from "~icons/lucide/briefcase";
-	import IconUsers from "~icons/lucide/users";
-	import IconHeart from "~icons/lucide/heart";
-	import IconGlobe from "~icons/lucide/globe";
+	// Icons - using placeholder components
+	const IconBriefcase = () => '💼';
+	const IconUsers = () => '👥';
+	const IconHeart = () => '❤️';
+	const IconGlobe = () => '🌍';
 
 	// Constants
 	const SECTION_BASE_CLASSES = "section-py section-px container mx-auto";
@@ -24,19 +24,16 @@
 
 	const benefits = [
 		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
+			title: "Shape job search revolution",
+			description: "Work on algorithms that match thousands of candidates with their perfect roles, directly impacting careers and lives."
 		},
 		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
-			icon: IconUsers
+			title: "Data-driven innovation",
+			description: "Build machine learning models that filter noise and surface only meaningful opportunities for job seekers."
 		},
 		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
+			title: "Community-first culture",
+			description: "Join a tight-knit team that values quality connections and meaningful professional relationships."
 		}
 	];
 
@@ -122,68 +119,64 @@
 
 	const employeeTestimonials = [
 		{
-			name: "Michael Chen",
-			position: "Senior Developer",
+			name: "Sophie Chen",
+			position: "Software Engineer",
 			company: "Engineering Team",
 			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
+				"When I started as a junior engineer, I was amazed by how much the senior team invested in my growth. The mentorship here isn't just about code reviews—it's about understanding the bigger picture of how our matching algorithms actually help people find careers they love. I've learned more in my first year than I did in my entire computer science program.",
 			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-professional-asian-woman-dressed-in-bu.webp"
 		},
 		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
+			name: "Diego Martinez",
+			position: "Product Manager",
+			company: "Product Team",
 			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
+				"Working on a platform that directly impacts people's career journeys gives every decision real weight. Our team culture is built around honest feedback and rapid iteration—when we see that our filtering algorithms help someone land their dream design role, it makes every late brainstorming session worth it. The autonomy to drive product direction while having a supportive team to bounce ideas off has been incredible for my development.",
 			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-professional-hispanic-man-wearing-a-sm.webp"
 		},
 		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
+			name: "Amara Williams",
+			position: "Marketing Director",
 			company: "Marketing Team",
 			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
+				"Leading the marketing team here taught me that authentic growth happens when you're passionate about the mission. Grids wasn't just another job board—we were genuinely trying to cut through the noise for job seekers. The leadership always encouraged bold ideas and gave me the resources to test them. Building a brand around transparency and quality over quantity challenged me to think beyond traditional marketing tactics, and I'm a stronger leader because of it.",
 			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-professional-african-american-woman-el.webp"
 		}
 	];
 
 	const processSteps = [
 		{
 			step: 1,
-			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
+			title: "Connect with us",
+			description: "Join our Discord community and share your background with the team. We believe in getting to know you beyond just a resume."
 		},
 		{
 			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
+			title: "Collaborative conversation",
+			description: "Meet with our team for an honest discussion about your goals, our mission, and how we can grow together."
 		},
 		{
 			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
+			title: "Make an impact",
+			description: "Start building meaningful connections between talent and opportunity, helping reshape how people find their ideal roles."
 		}
 	];
 
 	const values = [
 		{
-			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
+			title: "Quality over quantity",
+			description: "We filter through thousands of opportunities to surface only the ones worth your time and consideration."
 		},
 		{
-			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
+			title: "Transparency first",
+			description: "No buzzwords, no fluff. We provide clear, honest insights into companies and roles that help you make informed decisions."
 		},
 		{
-			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
+			title: "Empowering talent",
+			description: "We believe every professional deserves to find work that matches their skills and ambitions, not just any available position."
 		}
 	];
 </script>
@@ -191,15 +184,14 @@
 <!-- Hero Section -->
 
 <SecondaryHero
-	generating
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
-	imageSrc="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+	title="Join our mission to transform careers"
+	subtitle="At Grids, we believe in connecting exceptional talent with opportunities that truly matter. Our team is dedicated to creating meaningful career journeys for designers and beyond."
+	imageSrc="/generated/image-a-diverse-team-of-professionals-collabor.webp"
 />
 
 <!-- Why Join Us Section -->
-<section class={SECTION_BASE_CLASSES} generating>
-	<SectionHeader title="Why join us?" subtitle="Build your career while making an impact" />
+<section class={SECTION_BASE_CLASSES}>
+	<SectionHeader title="Why join Grids?" subtitle="Build technology that transforms how people find meaningful work" />
 
 	<div class="mt-16 grid gap-4 md:grid-cols-3">
 		{#each benefits as benefit}
@@ -209,14 +201,14 @@
 </section>
 
 <!-- Culture Section -->
-<Culture {values} generating />
+<Culture {values} />
 
-<Testimonials testimonials={employeeTestimonials} generating />
+<Testimonials testimonials={employeeTestimonials} />
 
 <!-- Application Process -->
-<section class={SECTION_BASE_CLASSES} generating>
+<section class={SECTION_BASE_CLASSES}>
 	<div class="mx-auto">
-		<h2 class="text-title1 mb-16">Our application process</h2>
+		<h2 class="text-title1 mb-16">How to join our mission</h2>
 
 		<div class="grid gap-12 md:grid-cols-3">
 			{#each processSteps as { step, title, description }, i}
@@ -232,7 +224,7 @@
 	</div>
 </section>
 <!-- Current Openings Section -->
-<section class={GRADIENT_BG_CLASSES} generating>
+<section class={GRADIENT_BG_CLASSES}>
 	<div class="section-px section-py container mx-auto grid w-full items-start lg:grid-cols-2">
 		<SectionHeader title="Current openings" subtitle="Find your perfect role" />
 

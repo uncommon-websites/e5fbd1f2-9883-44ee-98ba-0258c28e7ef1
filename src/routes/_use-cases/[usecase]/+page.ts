@@ -1,4 +1,5 @@
 // Types
+import type { PageLoad } from "@sveltejs/kit";
 
 // Use cases can be considered industries depending on the company.
 // Types
@@ -90,18 +91,15 @@ const healthcareUseCase: UseCase = {
 		items: [
 			{
 				title: "Patient Engagement",
-				description: "Connect with patients through secure messaging and telehealth integration",
-				icon: "users"
+				description: "Connect with patients through secure messaging and telehealth integration"
 			},
 			{
 				title: "Clinical Workflows",
-				description: "Streamline documentation and clinical processes for improved efficiency",
-				icon: "clipboard-list"
+				description: "Streamline documentation and clinical processes for improved efficiency"
 			},
 			{
 				title: "Data Analytics",
-				description: "Gain insights from healthcare data to improve quality measures",
-				icon: "chart-bar"
+				description: "Gain insights from healthcare data to improve quality measures"
 			},
 			{
 				title: "Compliance Management",
@@ -166,18 +164,15 @@ const financeUseCase: UseCase = {
 		items: [
 			{
 				title: "Risk Assessment",
-				description: "Advanced analytics to identify and mitigate potential risks",
-				icon: "chart-line"
+				description: "Advanced analytics to identify and mitigate potential risks"
 			},
 			{
 				title: "Fraud Detection",
-				description: "AI-powered systems to detect unusual patterns and prevent fraud",
-				icon: "shield-alert"
+				description: "AI-powered systems to detect unusual patterns and prevent fraud"
 			},
 			{
 				title: "Investment Analysis",
-				description: "Data-driven insights for portfolio management and optimization",
-				icon: "presentation-chart"
+				description: "Data-driven insights for portfolio management and optimization"
 			},
 			{
 				title: "Regulatory Compliance",
@@ -243,18 +238,15 @@ const technologyUseCase: UseCase = {
 		items: [
 			{
 				title: "DevOps Integration",
-				description: "Seamlessly connect your development and operations workflows",
-				icon: "code-bracket"
+				description: "Seamlessly connect your development and operations workflows"
 			},
 			{
 				title: "AI-Assisted Development",
-				description: "Leverage machine learning for code suggestions and bug detection",
-				icon: "cpu-chip"
+				description: "Leverage machine learning for code suggestions and bug detection"
 			},
 			{
 				title: "Collaboration Tools",
-				description: "Foster teamwork with real-time communication and sharing features",
-				icon: "user-group"
+				description: "Foster teamwork with real-time communication and sharing features"
 			},
 			{
 				title: "Performance Monitoring",
@@ -319,23 +311,19 @@ const educationUseCase: UseCase = {
 		items: [
 			{
 				title: "Interactive Learning",
-				description: "Create engaging content that adapts to individual student needs",
-				icon: "academic-cap"
+				description: "Create engaging content that adapts to individual student needs"
 			},
 			{
 				title: "Assessment Tools",
-				description: "Measure learning outcomes with diverse evaluation methods",
-				icon: "clipboard-document-check"
+				description: "Measure learning outcomes with diverse evaluation methods"
 			},
 			{
 				title: "Student Analytics",
-				description: "Track progress and identify opportunities for intervention",
-				icon: "chart-pie"
+				description: "Track progress and identify opportunities for intervention"
 			},
 			{
 				title: "Administrative Automation",
-				description: "Streamline operations from enrollment to grade management",
-				icon: "cog"
+				description: "Streamline operations from enrollment to grade management"
 			}
 		]
 	},

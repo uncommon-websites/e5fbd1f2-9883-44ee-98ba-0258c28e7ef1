@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Types
-	import Clock from "~icons/lucide/clock";
-	import Laptop from "~icons/lucide/laptop";
-	import Building from "~icons/lucide/building";
+	const Clock = () => '⏰';
+	const Laptop = () => '💻';
+	const Building = () => '🏢';
 
 	type StatItem = {
 		value: string;
 		description: string;
-		icon: typeof Clock;
+		icon: () => string;
 	};
 
 	// Props
@@ -38,7 +38,7 @@
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
 			{#each stats as stat}
 				<div class="flex flex-col items-center text-center md:items-center">
-					<stat.icon class="text-primary-700 mb-4 h-8 w-8 opacity-80" />
+					<span class="text-primary-700 mb-4 text-2xl opacity-80">{stat.icon()}</span>
 					<span class="text-title1 mb-2 text-gray-900 dark:text-gray-50">{stat.value}</span>
 					<span class="text-body text-gray-600 dark:text-gray-300">{stat.description}</span>
 				</div>

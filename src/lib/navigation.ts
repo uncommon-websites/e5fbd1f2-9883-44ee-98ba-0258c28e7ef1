@@ -49,8 +49,8 @@ export type NavItem = {
 };
 
 export const cta = {
-	label: "Book demo",
-	href: "/"
+	label: "Join community",
+	href: "https://grids.at/community"
 };
 
 export const navigation: NavItem[] = [
@@ -60,7 +60,37 @@ export const navigation: NavItem[] = [
 		showInNav: true,
 		showInFooter: false
 	},
-
+	{
+		label: "Use Cases",
+		showInNav: true,
+		showInFooter: true,
+		children: [
+			{
+				label: "Smart job matching",
+				href: "/use-cases/smart-job-matching",
+				image: "/generated/image-a-person-sitting-at-a-desk-in-a-well-lit.webp",
+				description: "Cut through thousands of irrelevant listings to find opportunities perfectly matched to your skills, experience, and career goals",
+				showInNav: true,
+				showInFooter: true
+			},
+			{
+				label: "Company insights",
+				href: "/use-cases/company-insights",
+				image: "/generated/image-a-professional-in-a-modern-office-space-.webp",
+				description: "Get clear insights into company culture, team dynamics, and role expectations before you apply - no more surprise toxic environments",
+				showInNav: true,
+				showInFooter: true
+			},
+			{
+				label: "Profile optimization",
+				href: "/use-cases/profile-optimization", 
+				image: "/generated/image-a-creative-designer-in-a-bright-studio-s.webp",
+				description: "Create profiles that stand out and check every box employers are looking for, increasing your chances of getting hired",
+				showInNav: true,
+				showInFooter: true
+			}
+		]
+	},
 	{
 		label: "Company",
 		showInNav: true,

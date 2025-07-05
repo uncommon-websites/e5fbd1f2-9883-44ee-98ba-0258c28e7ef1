@@ -12,7 +12,7 @@
 	// Types
 
 	// Components
-	import IconArrowUpRight from "~icons/lucide/arrow-up-right";
+	const IconArrowUpRight = () => '↗';
 
 	// Utils
 
@@ -57,7 +57,7 @@
 							<div
 								class="ml-auto grid size-6 h-full items-center self-stretch text-current opacity-20 group-hover:-translate-x-[var(--offset)] group-hover:opacity-50"
 							>
-								<IconArrowUpRight class="size-full" />
+								<span class="text-lg">{IconArrowUpRight()}</span>
 							</div>
 						</a>
 					</li>

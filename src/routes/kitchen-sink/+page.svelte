@@ -1,44 +1,9 @@
-<script>
+<script lang="ts">
 	import Button from "$lib/components/ui/Button.svelte";
 	import Card from "$lib/components/ui/Card.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
 
-	// Icons - Create proper Svelte components
-	import { SvelteComponent } from 'svelte';
-	
-	class IconZap extends SvelteComponent {
-		constructor(options) {
-			super();
-			this.$set = () => {};
-		}
-		
-		$render() {
-			return '⚡';
-		}
-	}
-	
-	class IconShield extends SvelteComponent {
-		constructor(options) {
-			super();
-			this.$set = () => {};
-		}
-		
-		$render() {
-			return '🛡️';
-		}
-	}
-	
-	class IconUsers extends SvelteComponent {
-		constructor(options) {
-			super();
-			this.$set = () => {};
-		}
-		
-		$render() {
-			return '👥';
-		}
-	}
-	
+	// Simple icon functions
 	const IconSettings = () => '⚙️';
 	const IconPalette = () => '🎨';
 
@@ -522,13 +487,11 @@
 			features={[
 				{
 					title: "Auto-scaling",
-					description: "Automatically scale based on demand.",
-					icon: IconZap
+					description: "Automatically scale based on demand."
 				},
 				{
 					title: "SSL certificates",
-					description: "Free SSL certificates for all domains.",
-					icon: IconShield
+					description: "Free SSL certificates for all domains."
 				},
 				{
 					title: "Developer tools",

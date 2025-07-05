@@ -334,8 +334,7 @@ const educationUseCase: UseCase = {
 			},
 			{
 				title: "Administrative Automation",
-				description: "Streamline operations from enrollment to grade management",
-				icon: "cog"
+				description: "Streamline operations from enrollment to grade management"
 			}
 		]
 	},

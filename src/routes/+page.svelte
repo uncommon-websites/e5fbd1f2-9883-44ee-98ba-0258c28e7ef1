@@ -11,7 +11,7 @@
 </script>
 
 <Hero
-	title="Find better jobs, faster"
+	title="Find good jobs, faster"
 	subtitle="Cut the noise. Only roles worth your time."
 	imageSrc="/generated/image-a-professional-designer-dressed-in-smart.webp"
 	centered={false}

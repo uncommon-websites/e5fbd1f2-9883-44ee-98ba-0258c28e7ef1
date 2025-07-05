@@ -33,6 +33,7 @@ type UseCase = {
 		items: Array<{
 			title: string;
 			description: string;
+			icon?: string;
 		}>;
 	};
 	cta: {

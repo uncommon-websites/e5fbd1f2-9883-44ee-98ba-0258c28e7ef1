@@ -1,5 +1,4 @@
 // Types
-import type { PageServerLoad } from "@sveltejs/kit";
 
 // Use cases can be considered industries depending on the company.
 // Types
@@ -349,7 +348,7 @@ const useCases: Record<string, UseCase> = {
 	education: educationUseCase
 };
 
-export const load: PageLoad = async ({ params }) => {
+export const load = async ({ params }: { params: { usecase: string } }) => {
 	const { usecase } = params;
 
 	if (!usecase || !(usecase in useCases)) {

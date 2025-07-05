@@ -6,6 +6,9 @@
 	// Simple icon functions
 	const IconSettings = () => '⚙️';
 	const IconPalette = () => '🎨';
+	const IconShield = () => '🛡️';
+	const IconUsers = () => '👥';
+	const IconZap = () => '⚡';
 
 	// Theme controls
 	let themeRadius = $state(8); // 0.5rem = 8px

@@ -13,7 +13,7 @@
 <Hero
 	title="Find good jobs, faster"
 	subtitle="Cut the noise. Only roles worth your time."
-	imageSrc="/generated/image-a-polaroid-photo-of-a-trendy-product-des.webp"
+	imageSrc="/generated/image-a-professional-brand-designer-in-a-new-y.webp"
 	centered={false}
 />
 <LogoScroller 

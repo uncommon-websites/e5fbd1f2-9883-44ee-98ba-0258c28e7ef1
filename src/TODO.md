@@ -1,3 +1,47 @@
+# NEW TASK: Update Brand Variables for Grids
+
+## Overview
+Update all brand-related variables, colors, typography, and logo for Grids - a job matching platform that helps job seekers find relevant opportunities.
+
+## Tasks
+- [x] Examine current brand structure in app.css and theme.css
+- [x] Update primary color palette to reflect Grids' professional identity
+- [x] Update secondary colors for supporting elements
+- [x] Ensure typography aligns with Grids' clean, professional aesthetic
+- [x] Create/update logo component for Grids
+- [x] Update any brand-specific theme variables
+- [x] Test color contrast and accessibility
+- [x] Final design system compliance check - verify design system classes prioritized over Tailwind, NO shadows, NO custom CSS, NO arbitrary values, check theme.css, app.css and typography.css
+
+## Brand Direction
+- Professional, clean, tech-forward aesthetic
+- Colors that convey trust, efficiency, and innovation
+- Typography that's readable and modern
+- Overall feel should be polished and reliable for job seekers
+
+## ✅ Task Complete - Brand Variables Updated
+
+### Changes Made:
+1. **Primary Color Palette**: Updated to a professional blue-gray (hue 220.5) that conveys trust and reliability
+2. **Secondary Color Palette**: Updated to a complementary green-teal (hue 145.5) that suggests growth and opportunity
+3. **Logo Component**: Created new grid-based logo that represents job matching with interconnected grid elements
+4. **Typography**: Maintained existing DM Sans font which is clean and professional
+5. **Company Name**: Already correctly set to "Grids" in CONFIG
+
+### Color Psychology:
+- **Primary Blue-Gray**: Conveys professionalism, trust, and stability - perfect for job seekers
+- **Secondary Green-Teal**: Represents growth, opportunity, and forward movement
+- **Opacity Variations**: Grid logo uses varying opacity to show connection and matching
+
+### Design System Compliance:
+✅ All color updates use proper OKLCH color space format
+✅ Maintained existing design system structure and variables
+✅ Logo component uses currentColor for proper theming
+✅ No shadows, custom CSS, or arbitrary values introduced
+✅ All changes work within existing theme.css structure
+
+---
+
 # ✅ COMPLETED: Update Pricing Plans Section for Grids\n\n## Overview\nUpdated the pricing plans section to fit Grids, a job matching platform for job seekers (especially design roles).\n\n## Tasks\n- [x] Examine current pricing page structure\n- [x] Review existing pricing component\n- [x] Design new pricing tiers for job matching platform\n- [x] Update pricing tier names and descriptions\n- [x] Replace generic features with job seeker-focused features\n- [x] Ensure pricing is appropriate for individual job seekers\n- [x] Update call-to-action buttons and messaging\n- [x] Final design system compliance check - verify design system classes prioritized over Tailwind, NO shadows, NO custom CSS, NO arbitrary values, check theme.css, app.css and typography.css\n\n## Summary of Changes\n\n### Pricing Tiers Updated:\n1. **Explorer** (Free) - For casual job seekers just getting started\n   - 50 curated job matches monthly\n   - Basic company insights\n   - Application tracking for 10 jobs\n   - Community Discord access\n\n2. **Professional** ($24-29\/month) - For active job seekers ready to accelerate their search\n   - 200 targeted job matches monthly\n   - Detailed company insights\n   - Profile optimization tools\n   - Track up to 100 applications\n   - Salary benchmarking data\n   - Interview preparation guides\n\n3. **Career Accelerator** ($65-79\/month) - For serious professionals seeking premium opportunities\n   - Unlimited job matches\n   - Complete company intelligence\n   - 1-on-1 interview coaching\n   - Direct recruiter introductions\n   - Monthly portfolio reviews\n   - Priority customer support\n   - Exclusive job opportunities\n\n### Features Table Updated:\n- Job matches per month (50, 200, Unlimited)\n- Company insights (Basic, Detailed, Complete)\n- Profile optimization (Free tier excluded)\n- Application tracking (10, 100, Unlimited)\n- Salary insights (Paid tiers only)\n- Interview preparation (Basic guides to 1-on-1 coaching)\n- Direct recruiter contact (Top tier only)\n- Portfolio review (Top tier only)\n- Priority support (Paid tiers only)\n\n### Design System Compliance:\n✅ Removed all shadow classes and replaced with borders for button states\n✅ Fixed arbitrary value translate-y-[-4px] and replaced with -mt-2 for highlighted plan\n✅ Updated savings percentage to reflect actual tier pricing (up to 18%)\n✅ Confirmed all components use proper design system classes (section-py, section-px, text-title3, text-body, etc.)\n✅ No custom CSS or arbitrary values found\n✅ All typography uses established design system classes\n✅ Proper use of design system colors and spacing variables
 
 - [x] Examine current about page hero section structure
